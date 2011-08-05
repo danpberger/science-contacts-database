@@ -1,0 +1,53 @@
+CREATE TABLE `darwin`.`sc_contacts`(     
+`id` INT NOT NULL AUTO_INCREMENT ,     
+`first_name` VARCHAR(30) ,     
+`last_name` VARCHAR(30) ,     
+`affiliation` VARCHAR(60) ,     
+`affiliation_web` TEXT ,     
+`email` VARCHAR(60) ,     
+`twitter` VARCHAR(25) ,     
+`refer_science_id` INT ,     
+`phone` VARCHAR(9) ,     
+`notes` TEXT ,     
+`permission` BOOLEAN ,     
+PRIMARY KEY (`id`)  
+);
+
+create table `darwin`.`sc_messages`( 
+   `id` int NOT NULL , 
+   `from_science_id` int , 
+   `type` varchar(9) , 
+   `content` text , 
+   `sent_at` timestamp , 
+   `updated_at` timestamp , 
+   `subject_line` varchar(65) , 
+   PRIMARY KEY (`id`)
+ );
+ 
+ create table `darwin`.`sc_interest_areas`( 
+   `id` int NOT NULL , 
+   `name` varchar(20) , 
+   PRIMARY KEY (`id`)
+ );
+ 
+ create table `darwin`.`sc_contact_interest_areas`( 
+   `id` int NOT NULL , 
+   `sc_contact_id` int , 
+   `sc_interest_area_id` int , 
+   PRIMARY KEY (`id`)
+ );
+ 
+ create table `darwin`.`sc_contact_message`( 
+   `id` int NOT NULL , 
+   `sc_contact_id` int , 
+   `sc_message_id` int , 
+   PRIMARY KEY (`id`)
+ );
+ 
+ create table `darwin`.`sc_science`( 
+   `id` int NOT NULL , 
+   `name` varchar(50) , 
+   `email` varchar(50) , 
+   `phone` varchar(9) , 
+   PRIMARY KEY (`id`)
+ )

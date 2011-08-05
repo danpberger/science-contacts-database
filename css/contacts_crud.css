@@ -1,0 +1,111 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	width:1000px;
+	margin:0 auto;
+	font-family:arial;
+	font-size:12px;
+}
+
+.wrapper{
+	_padding-left:200px;
+	}
+
+.form_el {
+	padding:8px;
+	
+	}
+	
+.err {
+	color:red;
+}
+
+#choose {
+	 font-style: italic;
+}
+
+#no_me, #no_int {
+	cursor:pointer;
+	font-size:11px;
+	margin-top:9px;
+}
+
+#add_me, #add_int{
+	padding:8px;
+}
+
+.nav-bar {
+	background-color:#ced9df;
+	padding:8px;
+}
+
+.nav-bar .nav{
+	margin-right:4px;
+	margin-left:4px;	
+	color:#51829a;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.message {
+	color:red;
+	font-size:12px;
+	font-weight:bold;
+	padding:8px;		
+}
+
+ul.contacts_list {
+	list-style-type:none;
+	width:250px;
+	float:left;
+	padding-left:0px;
+	height:700px;
+	overflow:scroll;
+	margin:8px 0 0 0;
+}
+
+ul.contacts_list li {
+	padding:4px;
+	cursor:pointer;
+}
+
+.contact_full, .edit{
+	float:left;
+	width: 700px;
+	padding:8px;
+	margin-left:10px;
+	margin-top:12px;
+	border:1px solid #000;
+	-moz-border-radius: 4px;
+}
+
+.contact_full div {
+	margin: 4px 0;
+	}
+
+.edit{
+	height:675px;
+	overflow:scroll;
+	}
+
+.small {
+	font-size:11px;
+}
+
+.tools {
+	padding:8px;
+	font-weight:bold;
+	background-color:#CED9DF;
+	}
+
+#reset, #add_new, #show_e, #do_twit, .cursor, #msg_pref, #msg_cancel {cursor:pointer;}
+
+#filter_on, #actions {float:left; width:450px; padding:4px;}
+
+#sub_tools{background-color:#FBE5E7; padding:4px;}
+
+#edit_em{padding:4px; border-bottom:1px solid #666;}
+
+.odd {background-color: #fff;}
+
+.even {background-color:#E2E8EC;}
